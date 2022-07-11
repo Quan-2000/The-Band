@@ -1,0 +1,117 @@
+/*PC*/
+@media (min-width: 64em) {
+    
+}
+
+/*Table & Mobile*/
+/*sử dụng đơn vị tương đối em để tương thích với nhiều trình duyệt*/
+@media (max-width: 63.9375em) {
+    /*tăng padding và font-size: 48px 
+    tăng khoảng cách giữa các icon -> dễ bấm*/
+    .btn {
+        padding: 15px 16px; 
+    }
+
+    #nav .subnav a {
+        padding: 5px 12px;
+    } 
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #footer .social-list {
+        font-size: 24px;
+    }
+
+    #footer .social-list a {
+        margin: 0 4px; 
+    }
+
+    #footer .copyright a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
+
+/*Mobile*/
+@media (max-width: 46.1875em) {
+    .s-full-width,
+    .s-col-full {
+        width: 100% 
+        /*độ rộng = 100% để các member image 
+        tự đẩy nhau xuống thành hàng dọc -> col: dùng cho cột*/
+
+        /*s-full-width: dùng cho btn send có độ rộng 100% trên mobile*/
+    }
+
+    .s-mt-8 {
+        margin-top: 8px;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header .mobile-menu-btn {
+        display: block; 
+    }
+
+    #header .search-btn {
+        display: none; /*ẩn nút search với cửa sổ mobile*/
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;  
+        /*đối với cửa sổ pc và tablet: inline-block, 
+        cửa sổ mobile: block -> tạo thành hàng thẳng*/
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+    #nav .subnav {
+        position: initial;
+        /*đối với cửa sổ pc và tablet: inline-block, 
+        cửa sổ mobile: block -> tạo thành hàng thẳng*/
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 40px; /*lùi dòng cho subnav và tăng chiều cao subnav để dễ bấm*/
+    }
+
+    /*
+    #content .mobile-member-item 
+        margin-top: 31px;
+        width: 100%; /*cho các member item tự động nhảy xuống trên mobile
+    */
+
+    #content .member-image {
+        width: 60%; /*cho ảnh member trên mobile tự canh kích thước theo màn hình điện thoại*/
+    }
+
+    .contact-form {
+        margin-top: 32px; /*tạo khoảng cách giữa input trong contact và hình trên member list*/
+    }
+}
